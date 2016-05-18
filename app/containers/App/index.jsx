@@ -5,7 +5,9 @@ import {
     StyleComponet,
     SpreadDemo,
     StateAndProps,
-    PropTypesDemo
+    PropTypesDemo,
+    LifeCycle,
+    DestroyComponent
 } from '../../components';
 
 import './index.css';
@@ -33,6 +35,10 @@ class App extends Component {
         <StateAndProps />
         <hr />
         <PropTypesDemo title="prop属性类型"/>
+        <hr />
+        <LifeCycle />
+        <hr />
+        <DestroyComponent />
       </div>
     );
   }
