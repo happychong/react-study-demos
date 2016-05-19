@@ -7,7 +7,12 @@ import {
     StateAndProps,
     PropTypesDemo,
     LifeCycle,
-    DestroyComponent
+    DestroyComponent,
+    RefComponent,
+    RefsComponent,
+    EventComponent,
+    PersonalComponent,
+    UseChildrenComponent
 } from '../../components';
 
 import './index.css';
@@ -39,6 +44,16 @@ class App extends Component {
         <LifeCycle />
         <hr />
         <DestroyComponent />
+        <hr />
+        <RefComponent />
+        <hr />
+        <RefsComponent />
+        <hr />
+        <EventComponent />
+        <hr />
+        <PersonalComponent />
+        <hr />
+        <UseChildrenComponent />
       </div>
     );
   }

@@ -8,7 +8,6 @@ class DestroyComponent extends Component {
   }
 
   increase = () => {
-      debugger;
       this.setState({
         value: this.state.value + 1
       });
@@ -25,13 +24,16 @@ class DestroyComponent extends Component {
         return null;
     }
 
-    return (<div>
-      <p>
-        <button onClick={this.increase}>每次加1</button>
-        <button onClick={this.destroy}>干掉这两个按钮</button>
-      </p>
-      <LifeCycle value={this.state.value}/>
-    </div>);
+    return (
+        <div>
+          <p>
+            {this.state.value}
+            <button onClick={this.increase}>每次加1</button>
+            <button onClick={this.destroy}>干掉这两个按钮</button>
+          </p>
+          <LifeCycle value={this.state.value}/>
+        </div>
+    );
   }
 }
 
